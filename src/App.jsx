@@ -60,7 +60,7 @@ export default function App() {
 
   // Load CSV
   useEffect(() => {
-    fetch('/DATA_MICHELIN_RESTAURANTS.csv')
+    fetch('/michelin_guide_restaurant_data.csv')
       .then(r => r.text())
       .then(csv => {
         Papa.parse(csv, {
